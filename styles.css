@@ -8,39 +8,6 @@
   --cc-color: #ccc;
 }
 
-/* Default styles (desktop first) */
-body {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/* For tablets and smaller screens */
-@media screen and (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-
-  .container {
-      flex-wrap: wrap;
-  }
-}
-
-/* For mobile devices */
-@media screen and (max-width: 480px) {
-  body {
-      font-size: 12px;
-  }
-
-  .container {
-      flex-direction: column;
-  }
-}
 
 
 /* General Reset */
