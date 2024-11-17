@@ -1,0 +1,344 @@
+:root{
+  --gray-color: #333;
+  --white-color: white;
+  --darkgray-color: #1b1b1b;
+  --black-color: #000;
+  --orange-color:#f4a261;
+  --orangelink-color:#ff9742;
+  --cc-color: #ccc;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: var(--gray-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+#about p {
+  margin-bottom: 1.2rem; /* Adjust the value as needed */
+}
+
+
+/* Navbar */  
+.navbar {
+  background:var(--darkgray-color);
+  color: var(--white-color);
+  padding: 0.4rem 0;
+}
+
+.navbar h1 {
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color:var(--white-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header Section */
+.header {
+  background:var(--gray-color);
+  color: var(--white-color);
+  padding: 1.7rem 0;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--white-color);
+  object-fit: cover;
+  margin-right: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-content h1 {
+  font-size: 2em;
+}
+
+.text-content p {
+  font-size: 1.2em;
+}
+
+/* Skills Section */
+.skills {
+  padding: 3rem 0;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.skills li {
+  margin: 1rem 0;
+}
+
+.skills strong {
+  color:var(--orange-color);
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Spacing between skill boxes */
+  padding: 0;
+}
+
+.skills li {
+  background-color:var(--white-color); /* Box background */
+  border: 2px solid var(--orange-color); /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Inner spacing */
+  text-align: center; /* Centered text */
+  width: 200px; /* Fixed width for uniformity */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.skills li:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Optional: Skill text styling */
+.skills strong {
+  color: var(--orange-color);
+  font-weight: bold;
+}
+
+/* Education */
+.EDU {
+  padding: 5rem 0;
+  background-color: var(--cc-color);
+  text-align: center;
+  text-emphasis-color: var(--black-color);
+}
+
+.EDU h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.EDU ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.EDU li {
+  margin: 1rem 0;
+}
+
+.EDU strong {
+  color: var(--orange-color);
+}
+
+.EDU ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Spacing between skill boxes */
+  padding: 0;
+}
+
+.EDU li {
+  background-color: var(--white-color); /* Box background */
+  border: 2px solid var(--black-color); /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Inner spacing */
+  text-align: center; /* Centered text */
+  width: 270px; /* Fixed width for uniformity */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.EDU li:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Optional: Skill text styling */
+.EDU strong {
+  color: var(--orange-color);
+  font-weight: bold;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem 0;
+  background: var(--white-color);
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project {
+  background: var(--white-color); /* Box background */
+  border: 2px solid var(--orange-color); /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  width: calc(33.333% - 1rem); /* Maintain responsive grid */
+  text-align: center; /* Centered text */
+  padding: 1rem; /* Inner spacing */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.6s ease; /* Smooth hover effect */
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+.project img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.project h3 {
+  margin: 0.3rem 0;
+}
+
+#view-more {
+  margin-top: 1rem;
+  padding: 0.9rem 2.5rem;
+  background: var(--gray-color);
+  color: var(--white-color);
+  border: var(--black-color);
+  border-width: 16px; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 0;
+  text-align: center;
+  background: var(--cc-color);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-emphasis-color: var(--black-color);
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
+
+.contact a {
+  color: var(--orangelink-color);
+  text-decoration: none;
+}
+
+/* Search Box */
+.search-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+#search-box {
+  padding: 0.8rem;
+  width: 50%;
+  border: 1px solid var(--cc-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Project Section (Same as earlier) */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project {
+  background: var(--white-color);
+  border-radius: 8px;
+  width: calc(33.333% - 1rem);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.project h3 {
+  margin: 0.5rem 0;
+}
+
+.about div{
+  text-align-last: center;
+  margin: 20px;
+}
+
+.about {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about{
+  background: var(--white-color); /* Box background */
+  border: 2px solid var(--orange-color); /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  margin-left: 11%;
+  width: calc(80.333% - 1rem); /* Maintain responsive grid */
+  text-align: center; /* Centered text */
+  padding: 1rem 12rem; /* Inner spacing */
+  box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
