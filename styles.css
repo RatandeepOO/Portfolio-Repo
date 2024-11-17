@@ -117,9 +117,9 @@ body {
   margin: 0 auto;
 }
 
-.header image{
-  width: 100px; /* Adjust the size as needed */
-  height: 100px; /* Keep it equal to width for a perfect circle */
+.header img{
+  width: 10px; /* Adjust the size as needed */
+  height: 10px; /* Keep it equal to width for a perfect circle */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fits within the circle */
   border: 2px solid #ccc; /* Optional: Adds a border */
