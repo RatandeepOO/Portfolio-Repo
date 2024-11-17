@@ -77,7 +77,7 @@ body {
 .navbar {
   background:var(--darkgray-color);
   color: var(--white-color);
-  padding: 0.4rem 0;
+  padding: 0.4rem 10;
 }
 
 .navbar h1 {
