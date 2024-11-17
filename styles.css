@@ -117,6 +117,10 @@ body {
   margin: 0 auto;
 }
 
+.header image{
+  align-self: auto;
+}
+
 
 .text-content h1 {
   font-size: 2em;
