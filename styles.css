@@ -8,6 +8,45 @@
   --cc-color: #ccc;
 }
 
+/* Default styles (desktop first) */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      flex-wrap: wrap;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* General Reset */
 * {
@@ -78,15 +117,6 @@ body {
   margin: 0 auto;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid var(--white-color);
-  object-fit: cover;
-  margin-right: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
 
 .text-content h1 {
   font-size: 2em;
@@ -135,7 +165,7 @@ body {
   border-radius: 8px; /* Rounded corners */
   padding: 1rem; /* Inner spacing */
   text-align: center; /* Centered text */
-  width: 200px; /* Fixed width for uniformity */
+  max-width: 200px; /* Fixed width for uniformity */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
@@ -191,7 +221,7 @@ body {
   border-radius: 8px; /* Rounded corners */
   padding: 1rem; /* Inner spacing */
   text-align: center; /* Centered text */
-  width: 270px; /* Fixed width for uniformity */
+  max-width: 270px; /* Fixed width for uniformity */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
@@ -224,7 +254,7 @@ body {
   background: var(--white-color); /* Box background */
   border: 2px solid var(--orange-color); /* Border color */
   border-radius: 8px; /* Rounded corners */
-  width: calc(33.333% - 1rem); /* Maintain responsive grid */
+  max-width: calc(33.333% - 1rem); /* Maintain responsive grid */
   text-align: center; /* Centered text */
   padding: 1rem; /* Inner spacing */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -238,7 +268,7 @@ body {
 
 
 .project img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px 8px 0 0;
 }
 
@@ -287,7 +317,7 @@ body {
 
 #search-box {
   padding: 0.8rem;
-  width: 50%;
+  max-width: 50%;
   border: 1px solid var(--cc-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -304,14 +334,14 @@ body {
 .project {
   background: var(--white-color);
   border-radius: 8px;
-  width: calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
   text-align: center;
   padding: 1rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px 8px 0 0;
 }
 
@@ -337,7 +367,7 @@ body {
   border: 2px solid var(--orange-color); /* Border color */
   border-radius: 8px; /* Rounded corners */
   margin-left: 11%;
-  width: calc(80.333% - 1rem); /* Maintain responsive grid */
+  max-width: calc(80.333% - 1rem); /* Maintain responsive grid */
   text-align: center; /* Centered text */
   padding: 1rem 12rem; /* Inner spacing */
   box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.1); /* Subtle shadow */
