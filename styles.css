@@ -117,7 +117,7 @@ body {
   margin: 0 auto;
 }
 
-.header img{
+.navbar img{
   width: 10px; /* Adjust the size as needed */
   height: 10px; /* Keep it equal to width for a perfect circle */
   border-radius: 50%; /* Makes the image circular */
