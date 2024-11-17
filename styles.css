@@ -117,14 +117,6 @@ body {
   margin: 0 auto;
 }
 
-.navbar-img{
-  width: 10px; /* Adjust the size as needed */
-  height: 10px; /* Keep it equal to width for a perfect circle */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: flex; /* Ensures the image fits within the circle */
-  border: 2px solid #ccc; /* Optional: Adds a border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-}
 
 
 .text-content h1 {
