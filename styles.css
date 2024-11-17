@@ -118,7 +118,12 @@ body {
 }
 
 .header image{
-  align-self: auto;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Keep it equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border: 2px solid #ccc; /* Optional: Adds a border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
 }
 
 
