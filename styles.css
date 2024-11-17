@@ -348,9 +348,15 @@ body {
 }
 
 .about div{
-  text-align-last:auto;
-  margin: 200px;
+  text-align-last: center;
+  margin: 20px;
 }
+
+.about text{
+  text-align: auto;
+  text-wrap:balance ;
+}
+
 
 .about {
   margin: 20px;
@@ -364,7 +370,7 @@ body {
   background: var(--white-color); /* Box background */
   border: 2px solid var(--orange-color); /* Border color */
   border-radius: 8px; /* Rounded corners */
-  margin-left: 9%;
+  margin-left: 11%;
   max-width: calc(80.333% - 1rem); /* Maintain responsive grid */
   text-align: center; /* Centered text */
   padding: 1rem 12rem; /* Inner spacing */
