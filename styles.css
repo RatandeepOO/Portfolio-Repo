@@ -353,8 +353,8 @@ body {
 }
 
 .about text{
-  text-align: auto;
-  text-wrap:balance ;
+  text-align: center;
+  text-wrap:nowrap ;
 }
 
 
