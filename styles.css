@@ -348,7 +348,7 @@ body {
 }
 
 .about div{
-  text-align-last: center;
+  text-align-last: auto;
   margin: 20px;
 }
 
