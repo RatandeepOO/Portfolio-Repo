@@ -1,80 +1,39 @@
-:root{
+:root {
   --gray-color: #333;
   --white-color: white;
   --darkgray-color: #1b1b1b;
   --black-color: #000;
-  --orange-color:#f4a261;
-  --orangelink-color:#ff9742;
+  --orange-color: #f4a261;
+  --orangelink-color: #ff9742;
   --cc-color: #ccc;
 }
-
-/* Default styles (desktop first) */
-body {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* For tablets and smaller screens */
-@media screen and (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-
-  .container {
-      flex-wrap: wrap;
-  }
-}
-
-/* For mobile devices */
-@media screen and (max-width: 480px) {
-  body {
-      font-size: 12px;
-  }
-
-  .container {
-      flex-direction: column;
-  }
-}
-
-
 
 /* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   color: var(--gray-color);
   line-height: 1.6;
+  font-size: 16px;
 }
 
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
-#about p {
-  margin-bottom: 1.2rem; /* Adjust the value as needed */
-}
-
-
-/* Navbar */  
+/* Navbar */
 .navbar {
-  background:var(--darkgray-color);
+  background: var(--darkgray-color);
   color: var(--white-color);
-  padding: 0.4rem 10;
+  padding: 0.4rem 10px;
 }
 
 .navbar h1 {
@@ -93,14 +52,14 @@ body {
 }
 
 .nav-links a {
-  color:var(--white-color);
+  color: var(--white-color);
   text-decoration: none;
   font-weight: bold;
 }
 
 /* Header Section */
 .header {
-  background:var(--gray-color);
+  background: var(--gray-color);
   color: var(--white-color);
   padding: 1.7rem 0;
   text-align: center;
@@ -114,8 +73,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .text-content h1 {
   font-size: 2em;
 }
@@ -124,6 +81,35 @@ body {
   font-size: 1.2em;
 }
 
+/* About Section */
+.about {
+  background: var(--white-color);
+  border: 2px solid var(--orange-color);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Skills Section */
 /* Skills Section */
 .skills {
   padding: 3rem 0;
@@ -137,28 +123,18 @@ body {
 }
 
 .skills ul {
-  list-style: none;
+  list-style: none; /* Removes the default list dots */
   font-size: 1.2rem;
-}
-
-.skills li {
-  margin: 1rem 0;
-}
-
-.skills strong {
-  color:var(--orange-color);
-}
-
-.skills ul {
+  padding: 0; /* Ensure no extra padding */
+  margin: 0; /* Remove any default margin */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem; /* Spacing between skill boxes */
-  padding: 0;
 }
 
 .skills li {
-  background-color:var(--white-color); /* Box background */
+  background-color: var(--white-color); /* Box background */
   border: 2px solid var(--orange-color); /* Border color */
   border-radius: 8px; /* Rounded corners */
   padding: 1rem; /* Inner spacing */
@@ -179,61 +155,6 @@ body {
   font-weight: bold;
 }
 
-/* Education */
-.EDU {
-  padding: 5rem 0;
-  background-color: var(--cc-color);
-  text-align: center;
-  text-emphasis-color: var(--black-color);
-}
-
-.EDU h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.EDU ul {
-  list-style: none;
-  font-size: 1.2rem;
-}
-
-.EDU li {
-  margin: 1rem 0;
-}
-
-.EDU strong {
-  color: var(--orange-color);
-}
-
-.EDU ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem; /* Spacing between skill boxes */
-  padding: 0;
-}
-
-.EDU li {
-  background-color: var(--white-color); /* Box background */
-  border: 2px solid var(--black-color); /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  padding: 1rem; /* Inner spacing */
-  text-align: center; /* Centered text */
-  max-width: 270px; /* Fixed width for uniformity */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.EDU li:hover {
-  transform: translateY(-10px); /* Lift up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-/* Optional: Skill text styling */
-.EDU strong {
-  color: var(--orange-color);
-  font-weight: bold;
-}
 
 /* Projects Section */
 .projects {
@@ -249,21 +170,20 @@ body {
 }
 
 .project {
-  background: var(--white-color); /* Box background */
-  border: 2px solid var(--orange-color); /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  max-width: calc(33.333% - 1rem); /* Maintain responsive grid */
-  text-align: center; /* Centered text */
-  padding: 1rem; /* Inner spacing */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.6s ease; /* Smooth hover effect */
+  background: var(--white-color);
+  border: 2px solid var(--orange-color);
+  border-radius: 8px;
+  max-width: calc(33.333% - 1rem);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-  transform: translateY(-10px); /* Lift up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 .project img {
   max-width: 100%;
@@ -279,10 +199,26 @@ body {
   padding: 0.9rem 2.5rem;
   background: var(--gray-color);
   color: var(--white-color);
-  border: var(--black-color);
-  border-width: 16px; 
-  cursor: pointer;
+  border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#view-more:hover {
+  background: var(--orange-color);
+  color: var(--darkgray-color);
+}
+
+/* Responsive for Projects */
+@media screen and (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .project {
+    max-width: 100%;
+  }
 }
 
 /* Contact Section */
@@ -295,7 +231,6 @@ body {
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-emphasis-color: var(--black-color);
 }
 
 .contact p {
@@ -307,72 +242,103 @@ body {
   text-decoration: none;
 }
 
-/* Search Box */
-.search-container {
+/* Footer */
+.footer {
   text-align: center;
-  margin: 1.5rem 0;
+  padding: 1rem 0;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+/* Education Section */
+.EDU {
+  padding: 3rem 0; /* Adjust padding for spacing */
+  background-color: var(--cc-color); /* Light background color for contrast */
+  text-align: center; /* Center-align the content */
+}
+
+.EDU h2 {
+  font-size: 2.5rem; /* Section heading size */
+  margin-bottom: 1.5rem; /* Space below the heading */
+  color: var(--black-color); /* Text color for emphasis */
+}
+
+.EDU ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0 auto; /* Center-align the list */
+  max-width: 800px; /* Constrain the width for readability */
+  display: flex;
+  flex-wrap: wrap; /* Enable responsive layout */
+  justify-content: center; /* Center-align the items */
+  gap: 1.5rem; /* Spacing between list items */
+}
+
+.EDU li {
+  background-color: var(--white-color); /* Box background */
+  border: 2px solid var(--orange-color); /* Border color for emphasis */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1.2rem; /* Inner spacing */
+  text-align: center; /* Centered text */
+  max-width: 270px; /* Fixed width for uniformity */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.EDU li:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Optional: Text styling inside education boxes */
+.EDU strong {
+  color: var(--orange-color); /* Highlight important text */
+  font-weight: bold; /* Bold styling */
+}
+
+.EDU p {
+  margin: 0.5rem 0 0; /* Space between elements inside the box */
+  color: var(--gray-color); /* Subdued text color */
+  font-size: 1rem; /* Font size for readability */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .EDU ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Adjust spacing */
+  }
+  .EDU li {
+    max-width: 100%; /* Allow items to take full width */
+  }
+}
+
+/* General styling for the search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 #search-box {
-  padding: 0.8rem;
-  max-width: 50%;
-  border: 1px solid var(--cc-color);
-  border-radius: 5px;
+  width: 50%; /* Adjust width as needed */
+  padding: 0.8rem 1rem;
   font-size: 1rem;
-}
-
-/* Project Section (Same as earlier) */
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.project {
-  background: var(--white-color);
+  border: 2px solid var(--orange-color); /* Use a consistent theme color */
   border-radius: 8px;
-  max-width: calc(33.333% - 1rem);
-  text-align: center;
-  padding: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none; /* Remove default outline */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover and focus transitions */
 }
 
-.project img {
-  max-width: 100%;
-  border-radius: 8px 8px 0 0;
+/* Focus and hover effects */
+#search-box:focus, #search-box:hover {
+  border-color: var(--dark-orange-color); /* Slightly darker shade for focus */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
 }
 
-.project h3 {
-  margin: 0.5rem 0;
-}
-
-.about div{
-  text-align-last: center;
-  margin: 20px;
-}
-
-.about text{
-  text-align: center;
-  text-wrap:nowrap ;
-}
-
-
-.about {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.about{
-  background: var(--white-color); /* Box background */
-  border: 2px solid var(--orange-color); /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  margin-left: 11%;
-  max-width: calc(80.333% - 1rem); /* Maintain responsive grid */
-  text-align: center; /* Centered text */
-  padding: 1rem 12rem; /* Inner spacing */
-  box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* Optional: Placeholder text styling */
+#search-box::placeholder {
+  color: #aaa; /* Subtle placeholder text */
+  font-style: italic;
 }
