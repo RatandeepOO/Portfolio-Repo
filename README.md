@@ -6,7 +6,7 @@ This is a personal portfolio website for Ratandeep Arora, a Python developer and
 
 ## Live Demo
 
-[Link to live demo](https://ratandeepoo.github.io/Portfolio-Repo/)
+[Link to live demo](https://github.com/RatandeepOO/Portfolio-Repo)
 
 ## Technologies Used
 
