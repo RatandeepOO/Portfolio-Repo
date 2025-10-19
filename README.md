@@ -4,9 +4,6 @@ This is a personal portfolio website for Ratandeep Arora, a Python developer and
 
 ![Portfolio Screenshot](portfolio.png)
 
-## Live Demo
-
-[Link to live demo](https://github.com/RatandeepOO/Portfolio-Repo)
 
 ## Technologies Used
 
@@ -30,20 +27,7 @@ Here are some of the projects featured on the portfolio website:
 *   **IoT Home Automation:** Control your home appliances using IoT and ESP32.
 *   **Portfolio Website:** This portfolio website itself, built with HTML, CSS, and JavaScript.
 *   **MoodTalk - Chatapp:** A chat application that provides responses based on the user's mood.
-
-## How to Run Locally
-
-To run this project locally, follow these steps:
-
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/RatandeepOO/Portfolio-Repo.git
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd Portfolio-Repo
-    ```
-3.  Open the `index.html` file in your web browser.
+*   **IOT Smart Class:** The IoT Smart Class uses RFID, ultrasonic, and QR systems for secure access, smart lighting, and automated attendance.
 
 ## Contact
 
